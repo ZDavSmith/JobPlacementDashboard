@@ -106,7 +106,23 @@ One of the most challenging user stories I tackled was fixing some errors presen
     }
    
 ### CompanyNews
-Another issue I handled was a bug that threw a java alert everytime a user attempted to input a date 
+Another issue I handled was a bug that threw a java alert everytime a user attempted to input an expiration date in the past, but still allowed the user to save the invalid date. I added a jquery function to prevent the user from selecting either the current date or any other date in the past from the calendar on top of an @Readonly attribute. 
 
 
-![ScreenShot](/READMEImages/CreateNewsItemsCalendar.png)
+      @section Scripts {
+          @Scripts.Render("~/bundles/jqueryval")
+          @Scripts.Render("~/bundles/jqueryui")
+
+    <script type="text/javascript">
+
+        $("#expDate_").datepicker({
+            defaultDate: "+1d",
+            changeMonth: false,
+            numberOfMonths: 1,
+            minDate: "+1d"
+        });
+    </script>
+    }
+    
+    
+   ![ScreenShot](/READMEImages/CreateNewsItemsCalendar.png)
