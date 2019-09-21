@@ -3,7 +3,12 @@
 ## Introduction
 This repository is a summary of my code for a live project I spent time on throughout the final two weeks of my coursework at The Tech Academy. The project was a management portal used for scheduling different people under different jobs under different managers utilizing the MVC model with the C# language and .NET frameworks. The project experience as a whole was a thorough exploration into the complexities of the coding universe, assembling my knowledge in HTML, CSS, JAVASCRIPT, SQL, and C# into one cohesive piece. Overall, I was able to greatly expand my problem-solving toolbox as a result of this project and equip myself with the knowledge I need to succeed as a developer. 
 
-### CalendarDatabase
+## Backend Stories
+* [Calendar Database](#calendar-database)
+* [Company News Date Error](#company-news-date-error)
+
+### Calendar Database
+
 
 One of the most challenging user stories I tackled focused on backend error handling and editing which turned into the following code:
 
@@ -105,8 +110,8 @@ This is a section from the CalendarController which takes a list of schedule ite
         </div>
     </div>
     }
-   
-### CompanyNews
+
+### Company News Date Error
    Another issue I handled was a bug which threw a java alert everytime a user attempted to input an expiration date in the past, yet still allowed the user to save the invalid date. I added a jquery function to prevent the user from selecting either the current date or any other date in the past from the calendar on top of an @Readonly attribute. 
 
 
@@ -127,6 +132,10 @@ This is a section from the CalendarController which takes a list of schedule ite
     
     
    ![ScreenShot](/READMEImages/CreateNewsItemsCalendar.png)
+
+
+## Front End Stories
+* [Container Agreement](#container-agreement)
 
 
 ### Container Agreement
@@ -197,3 +206,5 @@ When I was first assigned to this project, most of the views for the project had
       }
 
 ## Other Skills
+
+*Jump to: [Front End Stories](#front-end-stories), [BackEnd Stories](#back-end-stories), [Other Skills](#other-skills), [Page Top](#live-project)*
