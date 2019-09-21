@@ -206,5 +206,11 @@ When I was first assigned to this project, most of the views for the project had
       }
 
 ## Other Skills
+* How to safely operate the Sync, Push, Pull, Fetch, and New Branch operations for GitHub repositories.
+* Learned indepth about the Code First database approach.
+* How to effectively communicate with other developers in making sure everyone is on the same page.
+* How to quickly and efficiently navigate throughout the components of the Models, Views, and Controllers in the MVC coding approach
+* How to set efficiently set breakpoints within the code to pinpoint issues in the debugging process
+
 
 *Jump to: [Front End Stories](#front-end-stories), [BackEnd Stories](#back-end-stories), [Other Skills](#other-skills), [Page Top](#live-project)*
