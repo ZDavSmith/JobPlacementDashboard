@@ -87,7 +87,7 @@ One of the most challenging user stories I tackled was fixing some errors presen
         }
         }
         
-This is a section from the CalendarController which takes a list of schedule items from the Schedules table and converts them into a format for the site's CalendarEvents table. The code iterates through each schedule item and checks to see if the exact item already exists within the CalendarEvents table. If it does match, then the code checks each record's field to see if any changes have been edited in since the calendar was last rendered and adds in the change. If match = null, then a new record is created in the CalendarEvents table. To make sure that the start and end dates would not throw an error, I added @readonly attributes to the two text boxes to force the user to select a date using the jquery datepicker calendar. 
+   This is a section from the CalendarController which takes a list of schedule items from the Schedules table and converts them into a format for the site's CalendarEvents table. The code iterates through each schedule item and checks to see if the exact item already exists within the CalendarEvents table. If it does match, then the code checks each record's field to see if any changes have been edited in since the calendar was last rendered and adds in the change. If match = null, then a new record is created in the CalendarEvents table. To make sure that the start and end dates would not throw an error, I added @readonly attributes to the two text boxes to force the user to select a date using the jquery datepicker calendar. 
 
               <div class="form-group">
             @Html.LabelFor(model => model.EndDate, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -105,5 +105,24 @@ This is a section from the CalendarController which takes a list of schedule ite
     </div>
     }
    
+### CompanyNews
+Another issue I handled was a bug that threw a java alert everytime a user attempted to input an expiration date in the past, but still allowed the user to save the invalid date. I added a jquery function to prevent the user from selecting either the current date or any other date in the past from the calendar on top of an @Readonly attribute. 
 
- 
+
+      @section Scripts {
+          @Scripts.Render("~/bundles/jqueryval")
+          @Scripts.Render("~/bundles/jqueryui")
+
+    <script type="text/javascript">
+
+        $("#expDate_").datepicker({
+            defaultDate: "+1d",
+            changeMonth: false,
+            numberOfMonths: 1,
+            minDate: "+1d"
+        });
+    </script>
+    }
+    
+    
+   ![ScreenShot](/READMEImages/CreateNewsItemsCalendar.png)
