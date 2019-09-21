@@ -109,4 +109,4 @@ One of the most challenging user stories I tackled was fixing some errors presen
 Another issue I handled was a bug that threw a java alert everytime a user attempted to input a date 
 
 
-![Alt text](/../<READMEImages>/path/to/CreateNewsItemsCaldendar.png?raw=true "Optional Title")
+![ScreenShot](/READMEImages/CreateNewsItemsCalendar.png)
