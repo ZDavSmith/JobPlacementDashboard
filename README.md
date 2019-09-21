@@ -3,7 +3,7 @@
 ## Introduction
 This repository is a summary of my code for a live project I spent time on throughout the final two weeks of my coursework at The Tech Academy. The project was a management portal used for scheduling different people under different jobs under different managers utilizing the MVC model with the C# language and .NET frameworks. The project experience as a whole was a thorough exploration into the complexities of the coding universe, assembling my knowledge in HTML, CSS, JAVASCRIPT, SQL, and C# into one cohesive piece. Overall, I was able to greatly expand my problem-solving toolbox as a result of this project and equip myself with the knowledge I need to succeed as a developer. 
 
-## Backend Stories
+## Back End Stories
 * [Calendar Database](#calendar-database)
 * [Company News Date Error](#company-news-date-error)
 
@@ -213,4 +213,4 @@ When I was first assigned to this project, most of the views for the project had
 * How to set efficiently set breakpoints within the code to pinpoint issues in the debugging process
 
 
-*Jump to: [Front End Stories](#front-end-stories), [BackEnd Stories](#back-end-stories), [Other Skills](#other-skills), [Page Top](#live-project)*
+*Jump to: [Front End Stories](#front-end-stories), [Back End Stories](#back-end-stories), [Other Skills](#other-skills), [Page Top](#live-project)*
